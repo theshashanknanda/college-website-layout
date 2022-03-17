@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("/Images/college.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar .menu ul li a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding: 5px 12px;
+}
+
+.menu ul li::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 4px;
+  background: red;
+  margin-left: 8px;
+  transition: 0.5s;
+}
+
+.menu ul li:hover::after {
+  width: 60%;
+}
+
+.logoDiv {
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoDiv img {
+  width: 8%;
+  height: 8%;
+  z-index: 2;
+  opacity: 1;
+  padding: 6px 20px;
+}
+
+.logoDiv h1 a {
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.menu ul {
+  margin-right: 50px;
+}
+
+.textBox {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 7%;
+}
+
+.textBox h1 {
+  font-size: 60px;
+  padding: 10px;
+}
+
+.textBox p {
+  font-size: 16px;
+}
+
+.mainButton {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.mainButton a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.mainButton {
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+  padding: 14px 24px;
+}
+
+.mainButton:hover {
+  background-color: red;
+  border: 1px red solid;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.hamMenu {
+  display: none;
+}
+
+.closeButton {
+  display: none;
+}
+
+.courses {
+  min-height: 80vh;
+}
+
+.coursesTitle {
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+
+.coursesDes {
+  display: block;
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+  padding: 16px 120px;
+}
+
+.coursesRow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.coursesColumn {
+  padding: 20px 30px;
+  background-color: rgb(255, 230, 230);
+  margin: 40px;
+  border-radius: 8px;
+}
+
+.coursesColumn:nth-child(1) {
+  margin-left: 80px;
+}
+
+.coursesColumn:nth-child(3) {
+  margin-right: 80px;
+}
+
+.coursesColumn h3 {
+  padding: 14px 5px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.coursesColumn p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.coursesColumn:hover {
+  box-shadow: 0 0 8px 0 rgb(68, 68, 68);
+}
+
+.campusTitle {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 80px;
+}
+
+.campusDes {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.campuseRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.campusColumn {
+  display: inline-block;
+  width: 30%;
+  margin: 80px 10px;
+  margin-left: 30px;
+  background: rgb(218, 20, 0.7);
+  z-index: 2;
+}
+
+.campusColumn img {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.campusColumn h1 {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.campusColumn img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.facilititesTitle {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 80px;
+}
+
+.facilitiesDes {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 5px 10%;
+}
+
+.facilitiesRow {
+  display: flex;
+}
+
+.facilityColumn {
+  flex-basis: 32%;
+  margin: 40px;
+}
+
+.facilityColumn img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.facilityColumn h1 {
+  text-align: left;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+
+.facilityColumn p {
+  text-align: left;
+  font-size: 16px;
+  color: #777;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.testimonials {
+  padding-top: 10px;
+}
+
+.testimonialsTitle {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 80px;
+}
+
+.testimonialsDes {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 5px 10%;
+}
+
+.testimonialRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.testimonialColumn {
+  flex-basis: 34%;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(255, 230, 230);
+  border-radius: 10px;
+}
+
+.leftColumn {
+  padding: 10px;
+}
+
+.rightColumn p {
+  text-align: left;
+  color: #777;
+  font-size: 16px;
+  margin: 5px 10%;
+}
+
+.rightColumn h3 {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 10%;
+  padding-top: 20px;
+}
+
+.enrollNow {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/Images/college2.jpg");
+  width: 80%;
+  height: 60vh;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 10px;
+}
+
+.enrollNow h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 9%;
+}
+
+.enrollNow div {
+  margin-top: 8%;
+}
+
+.mainButton2 {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-top: 6%;
+}
+
+.mainButton2 a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.mainButton2 {
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+  padding: 14px 24px;
+}
+
+.mainButton2:hover {
+  background-color: red;
+  border: 1px red solid;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.footerTitle {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 120px;
+}
+
+.footerDes {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  margin: 5px 10%;
+}
+
+.madeBy {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .textBox h1 {
+    font-size: 18px;
+    position: absolute;
+    top: 30%;
+    left: 14%;
+  }
+
+  .textBox p {
+    font-size: 10px;
+    margin: 20px;
+    margin-top: 1%;
+    position: absolute;
+    top: 38%;
+  }
+
+  .mainButton {
+    display: block;
+    width: fit-content;
+    left: 32%;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+    margin-top: 20%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 44%;
+  }
+
+  .mainButton a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 8px;
+    text-align: center;
+  }
+
+  .logoDiv img {
+    height: 35px;
+    width: 35px;
+    padding: 3px 10px;
+    z-index: 1;
+  }
+
+  .logoDiv h1 {
+    font-size: 12px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .bar .menu ul li a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 16px 3px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .outerMenu {
+    width: 200px;
+    height: 100vh;
+    background-color: red;
+    z-index: 2;
+    position: absolute;
+    right: -200px;
+    transition: 1s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    margin-top: 30%;
+  }
+
+  .menu ul li {
+    padding: 15px 5px;
+  }
+
+  .logoDiv {
+    flex-direction: row;
+  }
+
+  .bar {
+    align-items: flex-start;
+  }
+
+  .hamMenu {
+    display: block;
+    padding: 20px;
+  }
+
+  .closeButton {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+  }
+
+  .coursesTitle {
+    text-align: center;
+    font-size: 30px;
+    padding: 34px 10px;
+    padding-top: 80px;
+  }
+
+  .coursesDes {
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    color: #777;
+  }
+
+  .coursesRow {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .coursesColumn {
+    width: 80vw;
+    padding: 10px 15px;
+    background-color: rgb(231, 200, 200);
+    margin: 40px 60px;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .coursesColumn p {
+    color: rgb(53, 53, 53);
+  }
+
+  .coursesColumn:nth-child(1) {
+    margin-left: 20px;
+  }
+
+  .campuseRow {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .campusColumn {
+    width: 80vw;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 6%;
+  }
+
+  .campuses p {
+    margin: 5px 40px;
+  }
+
+  .facilitiesRow {
+    flex-direction: column;
+  }
+
+  .facilityColumn {
+    margin: 30px 30px;
+  }
+
+  .testimonials {
+    margin-top: 2px;
+    padding-top: 2px;
+  }
+
+  .testimonialRow {
+    flex-direction: column;
+  }
+
+  .testimonialColumn {
+    margin: 40px;
+  }
+
+  .rightColumn h3 {
+    font-size: 16px;
+  }
+
+  .enrollNow h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 20% 8px;
+    font-size: 14px;
+  }
+
+  .mainButton2 {
+    margin-top: 40px;
+    padding: 14px;
+  }
+
+  .enrollNow {
+    padding: 10px;
+    height: 50vh;
+  }
+}
